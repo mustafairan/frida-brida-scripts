@@ -1,0 +1,21 @@
+/** brida exported function **/
+
+getcallstack: function() {
+	var abc="";
+    Java.perform(function () {
+      var Activity = Java.use("java.security.cert.CertificateFactory");
+      Activity.getInstance.overload("java.lang.String").implementation  = function () {
+        //console.log("v1: " + v1);
+        //console.log("v2: " + v2);
+        //console.log("v3: " + v3);
+        Java.perform(function() {
+        	var abc=Java.use("android.util.Log").getStackTraceString(Java.use("java.lang.Exception").$new());
+    console.log("----------------------------")
+    console.log(abc);
+    console.log("----------------------------")
+  });
+    };
+})
+
+//return abc;
+}
