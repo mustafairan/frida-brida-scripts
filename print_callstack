@@ -1,0 +1,13 @@
+setImmediate(function() {
+    console.log("[*] Starting script");
+    Java.perform(function () {
+      var Activity = Java.use("javax.crypto.Cipher");
+      Activity.doFinal.overload("[B").implementation  = function (v1) {
+        console.log("v1: " + v1);
+        //console.log("v2: " + v2);
+        //console.log("v3: " + v3);
+        Java.perform(function() {
+    console.log(Java.use("android.util.Log").getStackTraceString(Java.use("java.lang.Exception").$new()))
+  });
+    };
+})});
