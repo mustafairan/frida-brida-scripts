@@ -1,6 +1,6 @@
 //from brida scripts
 //https://github.com/federicodotta/Brida
-//frida -D emulator-5554 -l ./androidDefaultHooks.js -f com.example.app --no-pause
+//frida -D emulator-5554 -l ./androidDefaultHooks.js -f com.example.app
 //put the function at the end
 function androidpinningwithca1() {
 
